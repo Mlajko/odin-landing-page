@@ -6,12 +6,14 @@
 
 body {
     font-family: Roboto, sans-serif;
+    line-height: 1.2;
 }
 
 /* navbar */
 
-.container {
-    padding: 12px 10%;
+.container,
+.media {
+    padding: 12px 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,6 +33,10 @@ a {
     color: #e5e7eb;
 }
 
+a:hover {
+    color: rgb(209, 206, 201);
+}
+
 .navbar {
     background-color: #1f2937;
 }
@@ -41,4 +47,54 @@ a {
     font-weight: bold;
 }
 
-/* header */
+/* header (media) */
+
+.media {
+    background-color: #1f2937;
+    gap: 4em;
+    padding: 60px 15%;
+}
+
+.media {
+    flex-direction: row-reverse;
+}
+
+img {
+    max-width: 100%;
+}
+
+.image {
+    flex: 1;
+}
+
+.content {
+    flex: 1;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+p {
+    font-size: 18px;
+    color: #e5e5e5;
+    margin-bottom: 8px;
+}
+
+button {
+  background: royalblue;
+  border: 3px solid royalblue;
+  color: white;
+  cursor: pointer;
+  padding: 4px 32px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+button:hover {
+    background-color: #3882f6;
+    border: 1px dotted rgb(209, 206, 201);
+}
