@@ -7,6 +7,7 @@
 body {
     font-family: Roboto, sans-serif;
     line-height: 1.2;
+    height: 100vh;
 }
 
 /* navbar */
@@ -37,7 +38,8 @@ a:hover {
     color: rgb(209, 206, 201);
 }
 
-.navbar {
+.navbar,
+.footer {
     background-color: #1f2937;
 }
 
@@ -138,7 +140,7 @@ button:hover {
 
 /* section 2 (quote)*/
 
-.quote-text {
+.quote-text p {
     font-size: 36px;
     font-style: italic;
     color: #1f2937;
@@ -160,4 +162,45 @@ button:hover {
     margin-right: 5%;
     font-weight: bold;
     font-size: 18px;
+}
+
+/* section 3 (banner) */
+
+.banner {
+    display: flex;
+    background-color: #3882f6;
+    border-radius: 12px;
+    padding: 2em 6em;
+    margin: 5em 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signup-low {
+    /* flex: 1; */
+    background: royalblue;
+    border: 3px solid white;
+    color: white;
+    cursor: pointer;
+    padding: 4px 32px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.action {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f9faf8;
+}
+
+/* footer */
+
+.footer-text {
+    padding: 12px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #e5e7eb;
 }
